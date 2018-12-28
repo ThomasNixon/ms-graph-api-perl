@@ -8,7 +8,7 @@ Error handling, paging and refreshing tokens have been omitted to keep example s
 
 Required Perl module installation
 ```
-cpanm Dancer2 LWP::UserAgent URI::Escape URI::Query
+$ cpanm Dancer2 LWP::UserAgent URI::Escape URI::Query
 ```
 
 The code is based on the details given here https://docs.microsoft.com/en-us/graph/auth-v2-user?view=graph-rest-1.0
@@ -28,9 +28,9 @@ open browser and direct to
 Dancer2 endpoints used.
 
 ```
-/			# Displays link to login
-/login		# Redirects to MS login page
-/callback	# Handles the callback from MS login
-/emails		# Displays last 10 emails
-/logout		# Logs out of current session
+/         # Displays link to login
+/login    # Redirects to MS login page
+/callback # Handles the callback from MS login
+/emails   # Displays last 10 emails
+/logout   # Logs out of current session
 ```
